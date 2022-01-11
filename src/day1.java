@@ -21,6 +21,8 @@ public class day1 {
 		System.out.println(a);
 		c = 66;  // c is a char, implicitly converted to character based on ASCII cenventions.
 		System.out.println(c); // based on ASCII(Americann Standard code for information inteterchange) it will print 'B'.
+		/*Upper case alphabets start from 65 and smaller case starts from 97.
+  Any same alphabets of 2 different case differ by value 32.*/
 
 // break
 

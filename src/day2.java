@@ -38,7 +38,7 @@ public class day2 {
 		
 
 
-
+		n = 4;
 		// problem: print 1 if n = 1, simillarly print the name untill n = 7;
 		switch(n){ // in java 1.8 and above, the variable n is also allowed to be a String data type. Floats values are not allowed in switch statements.
 			// simillar to cpp
@@ -86,6 +86,7 @@ public class day2 {
 		i = 0;
 		do {
 			System.out.println("Do while loop: " + i);
+			++i;
 		} while (i < 5);
 
 		// for
@@ -93,9 +94,23 @@ public class day2 {
 			System.out.println("for loop: " + i);
 		} // for loop is used when we know both the upper and lower limit	
 
-		// for - each
+		// for - each added soon
+
+
+		// nested loops
+		// --------------------------------------------------
+		for (i = 0; i < 4; ++i) {
+			for ( j = 0; j < 4; j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
 		
-		
+		// output
+		// * * * * 
+		// * * * * 
+		// * * * * 
+		// * * * *
 	}
 
 }

@@ -36,7 +36,7 @@ public class day3{
 		System.out.println();
 
 		//  build a squre box with "$" as border
-		int max = 4;
+		int max = 4; // use a input function
 		for (int i = 1; i <= max; i++) {
 			if(i == 1 || i == max){
 				for (int j = 1; j <= max; j++) {
@@ -50,12 +50,11 @@ public class day3{
 					System.out.print("  ");
 				}
 				System.out.println("$ ");
-				
 			}
 		}
 		// output :
 		// $ $ $ $ 
-		// $     $
+		// $     $ 
 		// $     $ 
 		// $ $ $ $ 
 		
@@ -68,6 +67,11 @@ public class day3{
 		Calc obj; // creating a reference(address at memorey)
 		obj = new Calc(); // allocating memory to the ref. Now obj is an object.
 		obj.c1 = 10;
+		obj.c2 = 'B';
+		obj.calFun();
+		System.out.println("result value of the Calc class instance obj is : " + obj.result);
+
+
 	}
 }
 
@@ -79,6 +83,5 @@ class Calc {
 	int result;
 	public void calFun(){
 		result = c1 + (int)c2;
-		
 	}
 }

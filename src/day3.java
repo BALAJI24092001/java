@@ -64,7 +64,21 @@ public class day3{
 		// break : To break the loop
 		// continue : To skip an iteration of loop
 
+		// OOP instance and test
+		Calc obj; // creating a reference(address at memorey)
+		obj = new Calc(); // allocating memory to the ref. Now obj is an object.
+		obj.c1 = 10;
+	}
+}
 
-
+// 			OOP
+// ------------------------------------------------------------
+class Calc {
+	int c1 = 0; // while cpp assigns garbage value to un initialized variables, java assigns with the value 0. Garbage values of the variables are cleaned internally by java.(Garbage collection concept)
+	char c2 = 'A'; // "" are for string data type, '' are for charecter type.
+	int result;
+	public void calFun(){
+		result = c1 + (int)c2;
+		
 	}
 }

@@ -8,6 +8,7 @@ public class day3{
 			}
 			System.out.println();
 		}
+		// GOOD MORNING
 		// output :
 		// 1 
 		// 1 2 
@@ -18,6 +19,24 @@ public class day3{
 
 		System.out.println();
 
+		int sum=0;
+		for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                sum+=1;
+                System.out.print(sum+" ");
+            }
+            System.out.println(" ");
+		}
+		// adjust the code with 2 spaces for single digits and 1 space for double for better presentation.
+		//output
+		//1
+		//2  3
+		//4  5  6
+		//7  8  9  10
+		//11 12 13 14 15
+		
 		// build a right triangle with capital alphabets
 		char temp = 'A';
 		for (int i = temp; i < (int)temp + 5; i++) {

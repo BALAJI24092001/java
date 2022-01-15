@@ -8,6 +8,7 @@ public class day3{
 			}
 			System.out.println();
 		}
+		// GOOD MORNING
 		// output :
 		// 1 
 		// 1 2 

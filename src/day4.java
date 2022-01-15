@@ -23,21 +23,21 @@ class Calc{
 		n2 = 5;
 		res = 5;
 	}
-public Calc(int n1){ // Constructor overloading
-	this.n1 = n1;  // this pointer, same as this pointer in cpp
-	n2 = 5;
-	res = this.n1 + n2;
-}
-public Calc(int n1, double n2){
-	this.n1 = n1;
-	this.n2 = (int)n2;
-	res = 5;
-}
-public Calc(int n1, double n2, char res){
-	this.n1 = n1;
-	this.n2 = (int)n2;
-	this.res = (int)res;
-}
+	public Calc(int n1){ // Constructor overloading
+		this.n1 = n1;  // this pointer, same as this pointer in cpp
+		n2 = 5;
+		res = this.n1 + n2;
+	}
+	public Calc(int n1, double n2){
+		this.n1 = n1;
+		this.n2 = (int)n2;
+		res = 5;
+	}
+	public Calc(int n1, double n2, char res){
+		this.n1 = n1;
+		this.n2 = (int)n2;
+		this.res = (int)res;
+	}
 
 }
 

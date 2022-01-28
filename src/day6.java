@@ -58,7 +58,8 @@ public class day6{
 
 
 		// three dimensional array
-		int[][][] threearr = { {{1, 2}, {3, 4}}, { {5, 6}, {6,7} } };
+		int[][][] threearr = { { {1, 2}, {3, 4} }, 
+				       { {5, 6}, {6, 7} } };
 		System.out.println();
 		System.out.println();
 		for (int[][] var : threearr) {
@@ -72,8 +73,22 @@ public class day6{
 		}
 		System.out.println();
 
-		//sandglass timer pattern
-		
+
+		// jagged array
+		int jagarr[][] = new int[][] {
+			new int[]{1, 2, 3},
+			new int[]{4, 5},
+			new int[]{6, 7, 8, 9, 10}
+		};
+
+		for (int[] var : jagarr) {
+			for (int var1: var) {
+				System.out.print(var1 + "  ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+
 	}
 	// a fucntion returning an array.
 	public static int[] test(){ // test function created outside of the main function but inside of the main class.
@@ -85,7 +100,7 @@ public class day6{
 class Student{
     public int roll_no;
     public String name;
-    Student(int roll_no, String name)
+    public Student(int roll_no, String name)
     {
         this.roll_no = roll_no;
         this.name = name;

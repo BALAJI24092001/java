@@ -67,6 +67,7 @@ class singleton{
 
 
 public class Day8{
+	int stc = 0;
 	public static void main(String[] args) {
 		int temp =5; // this variable is declared in main fucntion of the class, so this is not available to other 
 		System.out.println(temp);
@@ -78,7 +79,7 @@ public class Day8{
 
 //	initializing a class 
 	sumTest temp0 = new sumTest(); // general initialization
-	sumTest temp1 = (sumTest)Class.forName("Day8.sumTest"); // Given it is stored in a package
+//	sumTest temp1 = (sumTest)Class.forName("Day8.sumTest"); // Given it is stored in a package
 	// error with .forname class initialization method
 	}
 

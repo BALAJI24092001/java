@@ -51,15 +51,44 @@ public class Day10{
 		};
 		inf infObj2 = () -> System.out.println("this is lamda expression");
 
+		infObj2.show();
+
 
 		// Exception handling
 		try{
-			int i = 1/0;
+			int[] a = new int[6]{1, 2, 3, 4, 5, 6};
+
+			int i = 6;
+			int j = 0;
+			int k = i/j;
 		}
-		catch(Exception e){
+		catch(Exception e){ // we can use the reference ArithmeticException
 			System.err.println("Error");
 		}
+		finally{ // this block will get excecuted if try throws an exception or not
+			// helpful to reduce redunduncy in code
+			System.out.println("Bye");
+		}
 		System.out.println("End Exception");
+
+		// multiple catch blocks
+		try{
+			int i = 0;
+			int k = 1/i;
+		}
+		catch(ArithmeticException e){ // we can club both the exceptions as
+//		catch(ArithmeticException | IndexOutOfBoundsException e){ System.out.println("Error "); }
+			System.out.println("ArithmeticException ");
+		}
+		catch(IndexOutOfBoundsException e){
+			System.out.println("IndexOutOfBoundsException for array index out of bound");
+		}
+		catch(Exception e){
+			System.out.println("Every possible other exception");
+		}
+		finally{
+			System.out.println("Thaggedhe le");
+		}
 	}
 }
 

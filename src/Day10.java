@@ -1,3 +1,5 @@
+import java.io.*;
+import java.util.*;
 // Anonymous class
 class A{
 	public void show(){
@@ -31,6 +33,8 @@ interface inf{
 
 public class Day10{
 	public static void main(String[] args) {
+
+
 		// to override only one method of class A we created class B
 		// Insted of creating another we can just use Anonymous public class Day10
 		A obj = new A(){ // we can create an object of an instance
@@ -39,9 +43,10 @@ public class Day10{
 				System.out.println("Legendary!!");
 			}
 		}; // need to put ';' while ending an anonymous class
-
-
 		obj.show();
+
+
+
 
 		inf infObj = () -> {
 			System.out.println("while in anonymous class we use 'new A(){}'.");
@@ -50,13 +55,14 @@ public class Day10{
 					System.out.println("so we dont have to define the object with new inf() and dont even have to write the function name");
 		};
 		inf infObj2 = () -> System.out.println("this is lamda expression");
-
 		infObj2.show();
+
+
 
 
 		// Exception handling
 		try{
-			int[] a = new int[6]{1, 2, 3, 4, 5, 6};
+			int[] a = new int[]{1, 2, 3, 4, 5, 6};
 
 			int i = 6;
 			int j = 0;
@@ -71,13 +77,16 @@ public class Day10{
 		}
 		System.out.println("End Exception");
 
+
+
+
 		// multiple catch blocks
 		try{
 			int i = 0;
 			int k = 1/i;
 		}
 		catch(ArithmeticException e){ // we can club both the exceptions as
-//		catch(ArithmeticException | IndexOutOfBoundsException e){ System.out.println("Error "); }
+		// catch(ArithmeticException | IndexOutOfBoundsException e){ System.out.println("Error "); }
 			System.out.println("ArithmeticException ");
 		}
 		catch(IndexOutOfBoundsException e){
@@ -89,6 +98,28 @@ public class Day10{
 		finally{
 			System.out.println("Thaggedhe le");
 		}
+
+
+
+
+		// trying user defined exception
+		BufferedReader br = null;
+		try{
+			br = new BufferedReader(new InputStreamReader( System.in )); // import java.io.*; to import BufferedReader and InputStreamReader
+			int n = Integer.parseInt(br.readLine());
+			br.close();
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+
+
+
+		// Input using scanner
+		Scanner sc = new Scanner(System.in); // Instead of using BufferedReader and InputStreamReader
+		// we can directly use Scanner function to makes things easy
+		System.out.println( sc.nextInt());
+		sc.close();
 	}
 }
 

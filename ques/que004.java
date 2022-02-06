@@ -18,18 +18,23 @@
 
 import java.util.Scanner;
 
-public class Solution {
+public class que004 {
 
     public static void main(String[] args) {
             Scanner sc=new Scanner(System.in);
-            System.out.println("================================");
+	    String[] s1 = new String[3];
+	    int[] x = new int[3];
             for(int i=0;i<3;i++)
             {
-                String s1=sc.next();
-                int x=sc.nextInt();
+                s1[i] =sc.next();
+                x[i] =sc.nextInt();
                 //Complete this line
-                System.out.printf("%-15s%03d%n", s1, x);
             }
+            System.out.println("================================");
+	    for (int i = 0; i < 3; i++) {
+		System.out.printf("%-15s%03d%n", s1[i], x[i]);
+	    }
+	    sc.close();
             System.out.println("================================");
 
     }

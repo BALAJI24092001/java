@@ -120,6 +120,14 @@ public class Day10{
 		// we can directly use Scanner function to makes things easy
 		System.out.println( sc.nextInt());
 		sc.close();
+		// There is no need to close the scanner. Not closing might generate some warnings although. 
+		// As soon as the block in which you defined Scanner object is over the garbage collection does your job for you.
+
+		// newInt will input next integer, if there is no integer, gives compiler error
+		// newLine will input whole line(with out the next line charecter "\n") into a string
+		// hasNew will return boolean values, true, if there is input from user else gives false
+		// hasNewLine, return true, if there is new line
+
 	}
 }
 

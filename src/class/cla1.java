@@ -19,7 +19,6 @@ public class cla1{
 		fibbonaci(5);
 		cal(8, 4);
 
-		System.out.println(fact(4));
 	}
 
 

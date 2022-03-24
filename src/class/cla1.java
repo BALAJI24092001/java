@@ -26,7 +26,7 @@ public class cla1{
 
 	// 1. Find if the given number is a prime number
 	static void EvalPrime(int val){
-		boolean flag = true;
+		boolean flag = false;
 		if( val > 1 ) {
 			for (int i = 2; i < val; i++) {
 				if(val%i==0){

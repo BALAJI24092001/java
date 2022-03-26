@@ -1,4 +1,4 @@
-public class day7{
+public class Day7{
 	public static void main(String[] args) {
 		// sandglass star pattern
 		int max = 5;

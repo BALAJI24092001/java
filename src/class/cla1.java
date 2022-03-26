@@ -3,10 +3,8 @@ public class cla1{
 		int val1= 1, val2 = 2;
 		int tot = val1 + val2;
 
-
 		// printing sum of numbers
 		System.out.println("Sum of the given two numbers is : "+ tot);
-
 
 		// Conditional statement
 		if (tot > 20) {
@@ -18,9 +16,9 @@ public class cla1{
 		EvalPrime(2);
 		fibbonaci(5);
 		cal(8, 4);
+		calc(8, 2, "sub");
 
 	}
-
 
 	// Lab programs
 
@@ -32,7 +30,7 @@ public class cla1{
 				if(val%i==0){
 					System.out.println(val + " is not a prime number.");
 					break;
-				} else if(val == val-1){
+				} else if(i == val-1){
 					flag = true;
 				}
 			}
@@ -74,6 +72,19 @@ public class cla1{
 		System.out.println("Division of given two numbers is : " + div);
 	}
 	
+	// optional for arthmetic problem
+	static void calc(int val1, int val2, String op){
+		if(op == "add")
+			System.out.println(val1 + val2);
+		if(op == "sub")
+			System.out.println(val1- val2);
+		if(op == "div")
+			System.out.println(val1/val2);
+		if(op == "mul")
+			System.out.println(val1*val2);
+	}
+
+
 
 	// Combination value(Ncr)
 	static int comb(int n, int r){

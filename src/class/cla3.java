@@ -44,7 +44,7 @@ public class cla3{
 		}
 		int[] sortedArray = bubbleSort(array);
 		for(int i: sortedArray){
-			System.out.print(i + ", ");
+			System.out.print(i + ", "); 
 		}
 		System.out.println();
 

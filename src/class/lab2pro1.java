@@ -8,7 +8,7 @@ public class lab2pro1{
 	}
 
 	static String strOp(String str1, String str2, String opr){
-		if("compare".equals(opr))
+		if("concat".equals(opr))
 			return str1+str2;
 		else if("len".equals(opr))
 			return "Length of string 1 is : " + str1.length() + "\nLength of string 2 is : " + str2.length();

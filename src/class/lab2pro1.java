@@ -3,7 +3,6 @@ public class lab2pro1{
 	public static void main(String[] args){
 		
 		String temp = strOp(args[0], args[1], args[2]);
-		System.out.println((String)args[0] + " " + (String)args[1] + " " + (String)args[2]);
 		System.out.println(temp);
 	}
 

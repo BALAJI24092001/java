@@ -99,10 +99,8 @@ public class cla5{
 			case "Paul anna":
 				break;
 		}
-		
 		// enum is a user defined data type
 		enum DAY{SUNDAY,MONDAY,TUESDAY}
-
 		// perform two dimensional matrix addition subtration and multiplication.
 	}
 }

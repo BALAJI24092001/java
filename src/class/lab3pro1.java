@@ -49,7 +49,7 @@ public class lab3pro1{
 	// matrix addition
 	static int[][] matrixAddition(int[][] arr1, int[][] arr2){
 		int[][] ans =new int[arr1.length][arr1.length];
-		for(int i = 0; i<arr1.length; i++) for (int j = 0; j < arr1.length; j++) ans[i][j] = arr1[i][j] + arr1[i][j];
+		for(int i = 0; i<arr1[0].length; i++) for (int j = 0; j < arr2.length; j++) ans[i][j] = arr1[i][j] + arr1[i][j];
 		return ans;
 	}
 

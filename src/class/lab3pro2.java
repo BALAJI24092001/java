@@ -1,10 +1,8 @@
 public class lab3pro2{
 	public static void main(String[] args){
-		int[] array1 = {1, 2, 3, 4};
-		int[] array2 = {1, 2, 3, 4, 5};
-//		System.out.println(arrayCompare(array1, array2));
-		
-		
+		int[] array1 = {5, 1, 2, 6, 3, 4};
+		int[] array2 = {1, 2, 3, 7, 4, 9};
+		int[] array3 = {4, 3, 2, 1};
 		int c = Integer.parseInt(args[0]);
 		switch (c) {
 			case 1:
@@ -14,15 +12,12 @@ public class lab3pro2{
 				arraysRemoveCommonElements(array1, array2);
 				break;
 			case 3:
-				greatestArrayElement(array1, array2);
+				System.out.println(greatestArrayElement(array1, array2));
 				break;
 			case 4:
-				arraySwapSameArraySize(array1, array2);
+				arraySwapSameArraySize(array1, array3);
 		}
-
-		
 	}
-
 	// comparing 2 arrays if they are equal
 	static boolean arrayCompare(int[] arr1, int[] arr2){
 		if(arr1.length != arr2.length) return false;
@@ -33,19 +28,19 @@ public class lab3pro2{
 	// removing common elements from 2 arrays
 	static void arraysRemoveCommonElements(int[] arr1, int[] arr2){
 		System.out.print("Array one elements after removing common elements : ");
-		for(int i=0; i<arr1.length; i++) for(int j=0; j<arr2.length; j++){
+		for(int i=0; i<arr1.length; i++) for(int j=0; j<arr2.length; j++) 
 			if(arr1[i] == arr2[j]){
 				i++;
 				break;
-			} else if(j == arr2.length-1) System.out.print(arr1[i]);
-		}
+			} else if(j == arr2.length-1) System.out.print(arr1[i] + " ");
 		System.out.println();
+
 		System.out.print("Array two elements after removing common elements : ");
 		for(int i=0; i<arr2.length; i++) for(int j=0; j<arr1.length; j++){
 			if(arr2[i] == arr1[j]){
 				i++;
 				break;
-			} else if(j == arr1.length-1) System.out.print(arr2[i]);
+			} else if(j == arr1.length-1) System.out.print(arr2[i] + " ");
 		}
 		System.out.println();
 	}

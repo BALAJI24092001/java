@@ -18,7 +18,7 @@ class Doctor{
 		System.out.println("Doctor : " + name);
 		System.out.println("Specializations : " + specialization);
 		System.out.println("Salary : " + salary);
-		System.out.println("Surgeries : " + experience);
+		System.out.println("Experience : " + experience);
 	}
 	void salary(){
 		if(experience > 5) salary = 50000;

@@ -10,13 +10,21 @@ public class lab2pro1{
 		if("concat".equals(opr))
 			return str1+str2;
 		else if("len".equals(opr))
-			return "Length of string 1 is : " + str1.length() + "\nLength of string 2 is : " + str2.length();
+			return "Length of string 1 is : " + str1.length() 
+				+ "\nLength of string 2 is : " 
+				+ str2.length();
 		else if("lowerCase".equals(opr))
-			return "Lower case of string 1 is : " + str1.toLowerCase() + "\nLower case of string 2 is : " + str2.toUpperCase();
+			return "Lower case of string 1 is : " 
+				+ str1.toLowerCase() 
+				+ "\nLower case of string 2 is : " 
+				+ str2.toUpperCase();
 		else if("upperCase".equals(opr))
-			return "Upper case of string 1 is : " + str1.toUpperCase() + "\nUpper case of string 2 is : " + str2.toUpperCase();
+			return "Upper case of string 1 is : " 
+				+ str1.toUpperCase() 
+				+ "\nUpper case of string 2 is : " 
+				+ str2.toUpperCase();
 		else if("compare".equals(opr))
-			return (str1 == str2)? "Same": "Not same";
+			return (str1.equals(str2))? "Same": "Not same";
 		else
 			return "Give an appropriate string operation";
 	}

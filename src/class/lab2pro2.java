@@ -2,7 +2,6 @@ public class lab2pro2{
 	// 2. Sorting an array, using command line arguments
 	public static void main(String[] args) {
 		// sort array, arguments from command line
-		System.out.print("Enter size of the array: ");
 		int[] array = new int[args.length];
 		for(int i = 0; i< args.length; i++)
 			array[i] = Integer.parseInt(args[i]);

@@ -39,9 +39,9 @@ public class lab3pro1{
 	static int[][] matrixMultiplication(int[][] arr1, int[][] arr2){
 		int[][] ans = new int[arr1.length][arr1.length];
 		for (int i = 0; i < arr1.length; i++) for (int j = 0; j < arr1.length; j++) {
-				int sum = 0;
-				for (int k = 0; k < arr1.length; k++) sum += arr1[j][k]*arr2[k][j];
-				ans[i][j] = sum;
+			int sum = 0;
+			for (int k = 0; k < arr1.length; k++) sum += arr1[j][k]*arr2[k][j];
+			ans[i][j] = sum;
 			}
 		return ans;
 	}

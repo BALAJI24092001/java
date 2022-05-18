@@ -45,21 +45,18 @@ public class lab3pro1{
 			}
 		return ans;
 	}
-
 	// matrix addition
 	static int[][] matrixAddition(int[][] arr1, int[][] arr2){
 		int[][] ans =new int[arr1.length][arr1.length];
 		for(int i = 0; i<arr1[0].length; i++) for (int j = 0; j < arr2.length; j++) ans[i][j] = arr1[i][j] + arr1[i][j];
 		return ans;
 	}
-
 	// matrix subtraction
 	static int[][] matrixSubtraction(int[][] arr1, int[][] arr2){
 		int[][] ans = new int[arr1.length][arr1.length];
 		for(int i = 0; i<arr1.length; i++) for (int j = 0; j < arr1.length; j++) ans[i][j] = arr1[i][j] - arr2[i][j];
 		return ans;
 	}
-
 	// printing a 2d array
 	static void printMatrix(int[][] arr, String message){
 		System.out.println();

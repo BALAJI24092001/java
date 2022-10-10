@@ -7,7 +7,7 @@ public class lab2pro1{
 
 	static String strOp(String str1, String str2, String opr){
 
-		if("concat".equals(opr))
+		if("concat".equalsIgnoreCase(opr))
 			return str1+str2;
 		
 		else if("len".equals(opr))
